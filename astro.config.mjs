@@ -5,7 +5,5 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react()],
-  site: 'https://everest275.github.io',
-  base: '/airportshuttle-landing',
+  integrations: [tailwind(), react()]
 });
