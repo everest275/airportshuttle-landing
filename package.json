@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "@astrojs/react": "^2.1.0",
@@ -24,5 +25,8 @@
     "react-router-dom": "^6.10.0",
     "scrollreveal": "^4.0.9",
     "tailwindcss": "^3.2.7"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
