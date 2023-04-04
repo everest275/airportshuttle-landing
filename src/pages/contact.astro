@@ -28,7 +28,11 @@ import Footer from "../components/landing/Footer.astro";
   <Footer/>
 </Layout>
 <style>
-  
+   @media only screen and (max-width: 840px) {
+    .background-contacts{
+      background-position: 50% 10%;
+    }
+  }
   .background-contacts{
     margin-top: -100px;
     width: 100%;
@@ -36,7 +40,7 @@ import Footer from "../components/landing/Footer.astro";
     background-image: url('https://i.ibb.co/w0JkGNP/MicroBus.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 10%;
+    background-position: 50% 50%;
     position: absolute;
     z-index: -99999999999999999999999999999999999;
   }
