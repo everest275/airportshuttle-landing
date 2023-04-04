@@ -1,0 +1,36 @@
+---
+import SocialMedia from "./SocialMedia.astro";
+---
+
+<div>
+<footer>
+<div class="secon-bar">
+<div class="it-secon-bar">© {new Date().getFullYear()} airportshuttlecr.com, Inc. All rights reserved.</div>
+<div class="it-secon-bar">
+        <SocialMedia/>
+    </div>
+</div>
+
+</footer>
+</div>
+<style>
+    .it-secon-bar{
+    }
+    .secon-bar{
+        position: absolute;
+        z-index: +11111;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .it-secon-bar{
+        align-self: center;
+       margin: 5px;
+    }
+.fondo-footer img{
+   position: absolute;
+   width: fit-content;
+   min-width: 1100px;
+}
+</style>

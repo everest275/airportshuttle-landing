@@ -1,0 +1,160 @@
+---
+import Information from "../landing/Information.astro";
+import Reservation from "../landing/Reservation"
+---
+<!-- 
+  <div class="fondoServices">
+    <div class="video1">
+    <video autoplay="true" muted="true" loop="true" poster="https://carontestudio.com/img/contacto.jpg">
+        <source src="images/videoFondo.mp4" type="video/mp4">
+         Tu navegador no soporta el formato de video
+      </video>
+    </div>
+    <div class="video2">
+      <video autoplay="true" muted="true" loop="true" poster="https://carontestudio.com/img/contacto.jpg">
+        <source src="images/videoPlayaFondo.mp4" type="video/mp4">
+        
+         Tu navegador no soporta el formato de video
+      </video>
+    </div>
+    <div class="video3">
+        <video autoplay="true" muted="true" loop="true" poster="https://carontestudio.com/img/contacto.jpg">
+          <source src="images/videoPlaya2Fondo.mp4" type="video/mp4">
+          
+           Tu navegador no soporta el formato de video
+        </video>
+      </div>
+</div>
+ -->
+
+ <div class="serv">
+  <div class="servs">
+  <div class="servi">
+    <img src="images/airpotshuttle.svg" alt="shuttle">
+    <h1>Airport shuttle</h1> 
+  </div>
+  <div class="servi">
+    <img src="images/localTaxi.svg" alt="taxi">
+    <h1>Local taxi</h1>
+  </div>
+  <div class="servi">
+    <img src="images/tourIcon.svg" alt="tour">
+    <h1>Tour guide</h1>
+  </div>
+</div>
+<div class="degrado">
+</div>
+</div>
+<div class="middle-title">
+  <div class="middle-title-it">
+<img class="ayudante-logo" src="images/autobus.png" alt="autobus"/>
+<h1 class="nombre-company">Airport shuttle & turism services</h1>
+</div>
+</div>
+<Reservation client:load/>
+
+<Information/>
+
+<style>
+  .middle-title{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    margin-top: 100px;
+
+  }
+  .middle-title-it{
+align-self: center;
+display: flex;
+flex-direction: row;
+flex-flow: row;
+  }
+     .ayudante-logo{
+       
+    margin-top: -20px;
+    padding: 5px;
+        width: 50px;
+        height: 40px; 
+    }
+   .nombre-company{
+        margin-top: -20px;
+        text-align: left; 
+font-family: Comic Sans MS; 
+font-weight:bold; 
+font-size: 20px; 
+color: #EBD758; 
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, -2px 2px 0 black, 2px 2px 0 black, 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black;
+    }
+ 
+   @keyframes cambiarColor{
+from{
+opacity: 0%;
+}
+to{
+opacity: 100%;
+}
+}
+.degrado{
+    background-image:linear-gradient(180deg,transparent,rgb(255, 254, 254)) ;
+    height: 130px;   
+    border: none;
+}
+ .serv{
+  background-image: url('images/VolcanArenalNavbar.jpg');
+  background-size: cover;
+  background-position:50% 50%;
+ width: 100%;
+ height: auto;
+ animation-name: cambiarColor; 
+    animation-duration: 2s;
+    border:none;
+ }
+ .servs{
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  padding-top: 100px;
+
+ }
+ .servi{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  font-family: Arial Black; 
+font-weight: bold; 
+font-size: 20px; 
+color: #fff; 
+text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+text-align: center;
+
+ }
+ .servi img{
+  width: 50px;
+  filter: invert(1);
+  
+  align-self: center;
+ }
+
+
+@keyframes cambiarColor{
+from{
+opacity: 0%;
+}
+to{
+opacity: 100%;
+}
+}
+ 
+    /* animation-name: cambiarColor; 
+    animation-duration: 4s;  */
+
+
+</style>
+
+
+
+

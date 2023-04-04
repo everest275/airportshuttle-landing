@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-color: white;
+    color: black;
+    overflow-x: hidden;
+    overflow-y:scroll ;
+}
+
+.slidebar h1{
+  font-weight: bold;
+  font-family: Comic Sans MS; 
+  font-size: 15px;
+    color: #EBD758;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    margin-left: 30px;
+}
+ .slidebar{
+  
+  position: fixed;
+  left:-250px;
+  width: 250px;
+  height:auto;
+ transition: all .5s ease;
+ top: 0;
+ z-index: 111;
+}
+.it-me{
+display: flex;
+gap: 40px;
+color: black;
+}
+.slidebar header{
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  text-align:start;
+  line-height: 40px;
+  /* background-color:#086c7cc7; */
+  background-color:white;
+  width: 100%;
+  user-select: none;
+ 
+}
+.slidebar header span{
+  margin-left: 20px;
+}
+.slidebar header img{
+  width: 20px;
+ margin-left: 60%;
+ opacity: 50%;
+ margin-top: -30px;
+ 
+}
+.slidebar ul a{
+   display: block;
+   height: 100%;
+   width: 100%;
+   line-height: 37px;
+   font-size:15px;
+   color: rgba(255, 255, 255, 1);
+   padding-left: 20px;
+   box-sizing: border-box;
+   border-top: 1px solid rgb(255, 255, 255,.1);
+   font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    transition: .4s;
+
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.slidebar ul a i{
+  margin-right: 16px; 
+ 
+
+}
+#check{
+  display: none;
+}
+label #btn, label #cancel{
+  position: absolute;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 3px;
+}
+label #btn{
+  position: fixed;
+  left: 25px;
+  top:20px;
+  font-size:30px;
+  color:white;
+  padding: 6px 12px;
+  transition: all .5s;
+ 
+ 
+}
+label #cancel{
+  position: fixed;
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 25px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+  opacity: 0;
+}
+.principal-container{
+  padding: 100px;
+  color: white;
+  align-items: stretch;
+  font-size: 20px;
+  
+}
+
+#check:checked ~ .slidebar{
+  left:0;
+ 
+}
+
+ #check:checked ~ label #cancel{
+  left:195px;
+  opacity: 100;
+ 
+}
+#check:checked ~ label #btn{
+  left:-195px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.carta{
+  background: rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px black;
+  box-shadow: 0 0 3px 1px black;
+  margin-bottom: 20px;
+}
+.options{
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  background: black;
+  visibility: hidden;
+}
+.options a{
+  align-self: center;
+}
+.places{
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+align-self: center;
+}
+.card-reservation{
+  background-image: url('images/manuelAntonio.webp');
+  background-size: cover;
+  background-position: 50% 50%;
+  color: white;
+   width: 100%;
+   height: 300px;
+   border: none;
+   margin-top: 100px;
+  
+}
+
+.reservation-banner-up{
+  background-image:linear-gradient(360deg,transparent,white) ;
+  height: 130px; 
+  border: none;
+}
+.sub-menu{
+margin-left:25%;
+margin-top: 2%;
+display: flex;
+flex-direction: column;
+flex-flow: column;
+
+}
+@media only screen and (max-width:590px) {
+  .sub-menu{
+margin-left:10%;
+}
+}
+.options a{
+cursor: pointer;
+}
+.reserv-button:hover{
+  background-color: #278b61;
+  text-decoration:underline;
+}
+.reserv-button{
+  font-weight: 900;
+ font-size: 2em;
+ line-height: 1.5; 
+  
+ width: 100%;
+ 
+ background-color: #42cc33fc;
+    color:black ;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  height: auto;
+}
+.second-pick{
+  visibility: hidden;
+}
+#check-reservation:checked ~ .second-pick{
+visibility: visible;
+}
+.card-reservation img{
+  width: 50px;
+  margin-left: 46%;
+  
+}
+/* SlideBarSection End */
+
+/* RESPONSIVE */
+@media only screen and (max-width: 840px) {
+    .menu,.titulo{
+      visibility: hidden;  
+    }  
+    .reservation-form{
+      padding:5% 10%;
+    }
+  }
+/* 
+only screen and (max-width: 768px)
+
+button {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .navbar,
+  .navbar-burger,
+  .menu,
+  .background {
+    position: fixed;
+  }
+  
+  .background {
+    z-index: 1;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background-image: url("assets/bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80%;
+    transition: 0.5s;
+  }
+  
+  body.open .background {
+    filter: blur(10px);
+  }
+  
+  .navbar {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 72px;
+    padding-left: 20px;
+    padding-right: 72px;
+  }
+  
+  .navbar-burger {
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 88px;
+    height: 88px;
+    background-image: url("./assets/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  body.open .navbar-burger {
+    background-image: url("./assets/close.svg");
+  }
+  
+  .menu {
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    border-bottom: 20px solid white;
+    transition: 0.5s;
+  }
+  
+  body.open .menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .menu nav:hover a {
+    opacity: 0.25;
+  }
+  
+  .menu nav a:hover {
+    opacity: 1;
+  }
+  
+  .menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu a {
+    position: relative;
+    color: #f9f9f9;
+    font-size: 32px;
+    font-family: "Euclid Circular A";
+    padding: 20px 0;
+    width: 300px;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  
+  .menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background: #f7f7f7;
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
+    transition: 0.4s;
+  }
+  
+  .menu a:hover::after {
+    transform: scaleX(1);
+  }
+  
+  body.open .menu a {
+    animation: appear 0.3s backwards;
+  }
+  
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      translate: 0 50px;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .t{
+    color: black;
+  } */
+
+
+
+ 

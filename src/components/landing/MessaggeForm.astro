@@ -1,0 +1,110 @@
+<div class="card">
+    <span class="title-message">Leave your message</span>
+    <form class="form-message" action="https://formsubmit.co/airportshuttlecr1924@gmail.com" method="POST">
+      <div class="group">
+      <input placeholder="" type="text"  name='name'>
+      <label for="name">Name</label>
+      </div>
+  <div class="group">
+      <input placeholder="" type="email" id="email" name="email">
+      <label for="email">Email</label>
+      </div>
+  <div class="group">
+      <textarea placeholder="" id="comment" name="message" rows="5" ></textarea>
+      <label for="comment">Comment</label>
+  </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  
+
+<style>
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 70px;
+}
+
+.title-message {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-message {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+  position: relative;
+}
+
+.form-message .group label {
+  font-size: 14px;
+  color: rgb(99, 102, 102);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  transition: all .3s ease;
+}
+
+.form-message .group input,
+.form-message .group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.form-message .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
+  top: 10px;
+  background-color: transparent;
+}
+
+.form-message .group input:focus,
+.form-message .group textarea:focus {
+  border-color: #3366cc;
+}
+
+.form-message .group input:focus+ label, .form-message .group textarea:focus +label {
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  color: #3366cc;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-message .group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form-message button {
+  background-color: #3366cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-message button:hover {
+  background-color: #27408b;
+}
+
+</style>

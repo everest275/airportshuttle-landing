@@ -1,0 +1,29 @@
+---
+import CardProduct from "./CardProduct.astro"
+---
+
+<h1 class="title-information-sec">Places to visit</h1>
+<ul class="places-grid">
+<CardProduct name="Manuel Antonio" description="Located in Puntarenas" imageURL="images/manuelTour.jpg"/>
+<CardProduct name="Volcan Arenal" description="Located in Alajuela" imageURL="images/volcanArenalTour.jpg"/>
+<CardProduct name="P. Calzon de pobre" description="Located in Guanacaste" imageURL="images/calzo-de-pobre.jpg"/>
+<CardProduct name="Puerto Viejo" description="Located in Limon" imageURL="images/puertoViejoTour.webp"/>
+<CardProduct name="P.N Tortuguero" description="Located in Limon" imageURL="images/tortuguero.webp"/>
+<CardProduct name="P.N Marino Ballena" description="Located in Puntarenas" imageURL="images/marino-ballena.jpg"/>
+</ul>
+<style>
+    .places-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,230px);
+            gap: 40px;
+            margin:109px;
+    }.title-information-sec{  
+            font-weight: 900;
+ font-size: 2em;
+ line-height: 1.5; 
+ text-align: center;
+margin-bottom: -70px;
+margin-top: 70px;
+
+    }
+</style>

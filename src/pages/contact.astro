@@ -1,0 +1,75 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Toolbar from "../components/landing/Toolbar.astro";
+import MessaggeForm from "../components/landing/MessaggeForm.astro";
+import Footer from "../components/landing/Footer.astro";
+
+---
+<Layout title="Contact">
+<Toolbar/>
+<div class="background-contacts">
+
+</div>
+<div class="contacts">
+  
+      <div class="cont">
+        <img src="images/correo.png" alt="email">
+        <h1>  Leonelcampos.51@gmail.com </h1>
+    </div>
+    <div class="cont">
+      <img src="images/llamada-telefonica.png" alt="llamda">
+      <h1> (+506) 88718986 </h1>     
+    </div>
+
+   </div>
+   <div class="container-message-to">
+   <MessaggeForm/>
+  </div>
+  <Footer/>
+</Layout>
+<style>
+  .background-contacts{
+    margin-top: -100px;
+    width: 100%;
+    height: 300px;
+    background-image: url('images/MicroBus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
+    position: absolute;
+    z-index: -99999999999999999999999999999999999;
+  }
+  .background-contacts img{
+    
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+  }
+  .container-message-to{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+  }
+ .cont{
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+    align-self: center;
+    color: aliceblue;
+
+  }
+.contacts img{
+min-width: 30px;
+max-width: 40px;
+}
+  .contacts{
+    background: rgba(0, 0, 0, 0.452);
+    display: flex;
+    width: 100%;
+    flex-direction: column;   
+    flex-flow: column;
+    margin-top: 100px;
+  }
+
+</style>
