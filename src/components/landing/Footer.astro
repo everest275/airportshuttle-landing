@@ -5,7 +5,7 @@ import SocialMedia from "./SocialMedia.astro";
 <div>
 <footer>
 <div class="secon-bar">
-<div class="it-secon-bar">© {new Date().getFullYear()} airportshuttlecr.com, Inc. All rights reserved.</div>
+<div class="it-secon-bar author" >© {new Date().getFullYear()} airportshuttlecr.com, Inc. All rights reserved.</div>
 <div class="it-secon-bar">
         <SocialMedia/>
     </div>
@@ -14,8 +14,12 @@ import SocialMedia from "./SocialMedia.astro";
 </footer>
 </div>
 <style>
-    .it-secon-bar{
+    @media only screen and (max-width: 840px) {
+    .author{
+      margin-left: 5px;
     }
+  }
+    
     .secon-bar{
         position: absolute;
         z-index: +11111;

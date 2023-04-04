@@ -6,12 +6,12 @@ export default function Slidebar() {
     <input type="checkbox" id="check"/>
     <label htmlFor="check">
       <i  id='btn'>
-        <img className='icons-slide' src='images/hamburger.svg'>
-        </img>
+        <img className='icons-slide' src='https://i.ibb.co/xmtskFj/menu-1.png'/>
+        
       </i>
       <i id="cancel">
-        <img className='icons-slide' src='images/close.svg'>
-        </img>
+        <img className='icons-slide' src='https://i.ibb.co/kSXtKvL/cerrar.png'/>
+       
       </i>
     </label>
     <div className="slidebar">
