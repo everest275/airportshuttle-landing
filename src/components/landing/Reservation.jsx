@@ -14,7 +14,7 @@ export default function Button() {
    <div className="card-reservation">
     <div className="reservation-banner-up"></div>
            
-    <button className='reserv-button' onClick={handelReserv}>Reserv Now Here!<img src="images/whatsapp-negro.png" alt="whatsapp"></img></button>
+    <button className='reserv-button' onClick={handelReserv}>Book Now Here!<img src="images/whatsapp-negro.png" alt="whatsapp"></img></button>
    </div>
    </div>
   )
